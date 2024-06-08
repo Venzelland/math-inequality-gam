@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Inequality Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1 id="title">Math Inequality Game</h1>
+  <div id="settings">
+    <label><input type="checkbox" id="plus" checked> <span id="plus-text">+</span></label>
+    <label><input type="checkbox" id="minus" checked> <span id="minus-text">-</span></label>
+    <label><input type="checkbox" id="multiply" checked> <span id="multiply-text">*</span></label>
+    <label><input type="checkbox" id="divide" checked> <span id="divide-text">/</span></label>
+    <div>
+      <label><input type="radio" name="range" id="one-digit" checked> <span id="one-digit-text">One-digit numbers</span></label>
+      <label><input type="radio" name="range" id="two-digit"> <span id="two-digit-text">Two-digit numbers</span></label>
+      <label><input type="radio" name="range" id="three-digit"> <span id="three-digit-text">Three-digit numbers</span></label>
+    </div>
+    <button id="start">Start Game</button>
+    <div>
+      <label><input type="radio" name="language" id="english" checked> English</label>
+      <label><input type="radio" name="language" id="russian"> Русский</label>
+    </div>
+  </div>
+  <div id="game" class="hidden">
+    <div class="game-info">
+      <p id="time-left-text">Time Left: <span id="time">60</span> seconds</p>
+      <p id="score-text">Correct Answers: <span id="score">0</span></p>
+    </div>
+    <div class="game-area">
+      <p id="question">1 + 2 = ?</p>
+      <input type="text" id="answer" autofocus>
+      <button id="submit">Submit</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
